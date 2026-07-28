@@ -1,0 +1,44 @@
+Steps to Setup/Update your Terminal-Style GitHub Profile Readme Card:
+
+1. Prerequisites:
+   Install the required Python packages (run once):
+   pip install pillow numpy rembg onnxruntime
+
+2. Adding your Photo:
+   - Place your portrait image in this directory.
+   - Name it "photo.jpg" (or specify another filename when running the script).
+
+3. Convert Photo to ASCII Art:
+   Run the following script to generate "portrait.txt":
+   python photo_to_ascii.py
+
+   (Note: To process a custom filename, run: python photo_to_ascii.py my_image.png)
+
+4. Generate the SVG Profile Cards:
+   Run the generation script to create both light and dark SVGs ("light.svg" and "dark.svg"):
+   python generate_profile.py
+
+5. Push to GitHub:
+   - Create a public GitHub repository named exactly after your username (e.g., github.com/sherwinbritto7/sherwinbritto7).
+   - Commit and push these files to the repository:
+     git init
+     git add .
+     git commit -m "Initialize profile card"
+     git branch -M main
+     git remote add origin https://github.com/{your-username}/{your-username}.git
+     git push -u origin main --force
+
+6. How to Edit Card Content:
+   - Open generate_profile.py in a text editor.
+   - Locate the INFO list (around line 32).
+   - You can edit roles, project descriptions, skills, and links by modifying the items in the list.
+   - The format is: (Label, Value, Color-Key)
+     - Label: e.g., "Role", "Edu", "GitHub"
+     - Value: The text you want displayed.
+     - Color-Key: "val" (standard text), "accent" (blue link), "warn" (orange/yellow), or "muted" (gray).
+   - Use special structural markers:
+     - "__header__" to change the main title text.
+     - "__rule__" to add a horizontal divider line.
+     - "__blank__" to add vertical space.
+     - "__section__" to create a section header like "~/projects".
+   - Save the file and run `python generate_profile.py` to compile changes into the SVGs.
