@@ -1,9 +1,15 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sherwinbritto7/sherwinbritto7/main/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sherwinbritto7/sherwinbritto7/main/light.svg">
-  <img alt="Sherwin Britto — Web Developer & React Specialist" src="https://raw.githubusercontent.com/sherwinbritto7/sherwinbritto7/main/dark.svg">
+  <source media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/kambojakul1-lgtm/kambojakul1-lgtm/main/dark.svg">
+
+  <source media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/kambojakul1-lgtm/kambojakul1-lgtm/main/light.svg">
+
+  <img alt="Akul Kamboj"
+       src="https://raw.githubusercontent.com/kambojakul1-lgtm/kambojakul1-lgtm/main/dark.svg">
+
 </picture>
 
 </div>
